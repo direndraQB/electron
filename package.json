@@ -1,0 +1,25 @@
+{
+  "name": "electron-auto-update-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "dhirendra",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.11",
+    "electron-builder": "^22.3.2"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.0"
+  },
+  "repository": {
+  "type" : "git",
+  "url" : "https://github.com/direndraQB/electron.git"
+},
+"build": "electron-builder build --win --publish never",
+"deploy": "electron-builder build --win --publish always"
+}
